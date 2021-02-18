@@ -7,6 +7,9 @@ class CookbooksController < ApplicationController
 
     def show
         cookbook = Cookbook.find_by(id: params[:id])
-        render json: { id: cookbook.id, recipes: cookbook.recipes}
+        options = {
+          include: [:recipes]
+        }
+        render json: CookbookSerializer.new(cookbook, options)
     end
 end
