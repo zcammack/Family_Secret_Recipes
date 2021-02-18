@@ -5,12 +5,12 @@ class CookbooksController < ApplicationController
   def index
     @cookbooks = Cookbook.all
 
-    render json: @cookbooks
+    render json: @cookbooks, only: [:id, :title, :about]
   end
 
   # GET /cookbooks/1
   def show
-    render json: @cookbook
+    render json: @cookbook, only: [:id, :title, :about]
   end
 
   # POST /cookbooks
