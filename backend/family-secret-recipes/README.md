@@ -22,11 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-The purpose of this application is to create a single page application. The application will allow a user to organize a cookbook with recipes.
-
-    Possible Additions: 
-        Rate the recipe.
-        Categorize recipes based on dish.
-        Share recipes with other users.
-        

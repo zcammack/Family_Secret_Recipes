@@ -2,14 +2,8 @@
 
 one:
   name: MyString
-  ingredients: MyText
-  directions: MyText
-  author: MyText
   cookbook: one
 
 two:
   name: MyString
-  ingredients: MyText
-  directions: MyText
-  author: MyText
   cookbook: two
