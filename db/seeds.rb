@@ -6,6 +6,3 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-10.times do
-    Recipe.create(name: "This is a seeded recipe.", creator: "Me, the developer.", description: "This recipe was created as a means to test the program with seeded recipes.")
-end

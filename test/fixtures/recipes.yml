@@ -1,11 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyText
-  creator: MyText
-  description: MyText
+  name: MyString
+  ingredients: MyText
+  directions: MyText
+  author: MyText
+  cookbook: one
 
 two:
-  name: MyText
-  creator: MyText
-  description: MyText
+  name: MyString
+  ingredients: MyText
+  directions: MyText
+  author: MyText
+  cookbook: two

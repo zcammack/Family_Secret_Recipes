@@ -10,14 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_18_024031) do
+ActiveRecord::Schema.define(version: 2021_02_18_055818) do
 
-  create_table "recipes", force: :cascade do |t|
-    t.text "name"
-    t.text "creator"
-    t.text "description"
+  create_table "cookbooks", force: :cascade do |t|
+    t.string "title"
+    t.text "about"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "recipes", force: :cascade do |t|
+    t.string "name"
+    t.text "ingredients"
+    t.text "directions"
+    t.text "author"
+    t.integer "cookbook_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["cookbook_id"], name: "index_recipes_on_cookbook_id"
+  end
+
+  add_foreign_key "recipes", "cookbooks"
 end
