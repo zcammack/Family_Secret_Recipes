@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Family Secret Recipes</title>
-    <link href="style.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Family Secret Recipes</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
 <body>
     <header>
         <h2>The Family Secret Recipes!</h2>
     </header>
-    
-    <div id="root"></div>
-    <script src="index.js"></script>
+
+    <main>
+        <h3>Shh... keep it a secret!</h3>
+
+        <div class="card" id="cookbook-form"></div>
+
+        <button class="sort-button" style="color:black;background-color:white">Sort </button>
+
+        <div class="container" id="cookbooks-list"></div>
+    </main>
+
+    <script src="src/cookbook.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/recipe.js"></script>
 </body>
 </html>
