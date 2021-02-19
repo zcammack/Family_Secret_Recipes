@@ -11,31 +11,28 @@ class CookbooksController < ApplicationController
 
   # GET /cookbooks/1
   def show
-    render json: @cookbook
+    @cookbook = Cookbook.find(params[:id])
+    render json: @cookbook, status: 200
   end
 
   # POST /cookbooks
   def create
     @cookbook = Cookbook.create(cookbook_params)
- 
-    if @cookbook.save
-        render json: @cookbook, status: :created, location: @cookbook
-    else
-        render json: @cookbook.errors, status: :unprocessable_entity
-    end
+    render json: @cookbook, status: 200
   end
 
   # PATCH/PUT /cookbooks/1
   def update
     if @cookbook.update(cookbook_params)
-      render json: @cookbook
+      render json: @cookbook, status: 200
     else
-      render json: @cookbook.errors, status: :unprocessable_entity
+      render json: { errors: @cookbook.errors.full_messages }, status: :unprocessable_entity
     end
   end
 
   # DELETE /cookbooks/1
   def destroy
+    @cookbook = Cookbook.find_by(id: params[:id])
     @cookbook.destroy
   end
 
