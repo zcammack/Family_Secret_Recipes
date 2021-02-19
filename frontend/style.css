@@ -1,75 +1,14 @@
-body {
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    min-height: 100vh;
-    background-color: #661111;
-  }
+#root {
+    max-width: 1000px;
+    margin 0 auto;
+}
 
-  .header {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border: 1px solid #661111;
-    background-color: #58d2e2;
-    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-  }
-
-  .logo {
-    margin: 0;
-    text-align: center;
-    font-size: 200%;
-    font-family: 'Lucida Handwriting', 'Times New Roman', Times, cursive;
-  }
-  
-  #section-header-text {
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 2px;
-  }
-
-  
-  textarea {
-    width: 300px;
-    margin-top: 5px;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  
-  .mobile-bottom-nav {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    width: 175px;
-    left: 0px;
-    will-change: transform;
-    transform: translateZ(0);
+.container {
     display: flex;
-    height: 90px;
-    background-color: #58d2e2;
-  }
-  
-  #activeRecipeButtons {
-    margin: auto;
-    display: contents;
-  }
-  
-  button,
-  #navButtons {
-    justify-content: center;
-    /* padding: 20px; */
-    font-size: 20px;
-    color: floralwhite;
-    background-color: #002b43;
-    border: 5px;
-    border-radius: 3px;
-    border-color: powderblue;
-    display: flex;
-    width: 100%;
-    margin: 4px;
-  }
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem;
+    border: 1px solid gray;
+}
