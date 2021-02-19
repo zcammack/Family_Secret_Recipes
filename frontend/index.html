@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Secret Recipes</title>
-</head>
-<body>
-    <nav class="nav">
-        <a href="/" class="nav__link" data-link>My Cookbook</a>
-        <a href="/recipes" class="nav__link" data-link>Family Recipes</a>
-        <a href="/ingredients" class="nav__link" data-link>Shopping Cart</a>
-    </nav>
-    <script type="module" src="index.js"></script>
-</body>
+
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Family Secret Recipes</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <h1 class="logo">The Family Secret Recipes!</h1>
+        </header>
+      
+        <div id="recipeList"></div>
+        <div id="addRecipe">
+
+            <form id="addRecipeForm" action="index.html" method="post">
+                <h3 id="section-header-text">Add to your cookbook with a new recipe!</h3>
+                <input id="addName" type="text" placeholder="Recipe Name" />
+                <br />
+                <select id="recipeCategory">
+                  <option id="1" value="Chicken">Chicken</option>
+                  <option id="2" value="Beef">Beef</option>
+                  <option id="3" value="Pork">Pork</option>
+                  <option id="4" value="Soup">Soup</option>
+                  <option id="5" value="Salad">Salad</option>
+                  <option id="6" value="Dessert">Dessert</option>
+                </select>
+                <br />
+                <textarea
+                  id="addIngredients"
+                  cols="30"
+                  rows="7"
+                  placeholder="List out your ingredients here!"
+                  required
+                ></textarea>
+                <br />
+                <textarea
+                  id="addDirections"
+                  cols="30"
+                  rows="7"
+                  placeholder="Type out your directions here!"
+                ></textarea>
+                <br />
+                <input
+                  id="addRecipeButton"
+                  type="submit"
+                  name=""
+                  value="Submit"
+                /><br />
+            </form>
+        </div>
+        </div>
+      
+          <nav class="mobile-bottom-nav">
+            <div id="currentRecipeButtons">
+              <button id="previous" onclick="previousRecipe()">Previous Recipe</button>
+              <button id="next" onclick="nextRecipe()">Next Recipe</button>
+              <button id="allRecipes" onclick="allRecipes()">All Recipes</button>
+            </div>
+          </nav>
+    </body>
+    <!-- <script src="index.js"></script> -->
 </html>
