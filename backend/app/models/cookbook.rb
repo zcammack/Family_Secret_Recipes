@@ -1,3 +1,3 @@
 class Cookbook < ApplicationRecord
-    has_many :recipes. dependant: :destroy
+    has_many :recipes, dependent: :destroy
 end
