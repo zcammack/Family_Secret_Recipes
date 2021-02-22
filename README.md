@@ -1,24 +1,19 @@
-# README
+The Family Secret Recipe application is an app with a Javascript front end and a Ruby on Rails API back end that tracks cookbooks with recipes stored inside of them.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Installation Instructions
 
-Things you may want to cover:
+    Fork and clone the repository to your local machine.
 
-* Ruby version
+    Change directories into the backend folder and run 'bundle install'.
 
-* System dependencies
+    Setup and seed the data base with the following commands:
 
-* Configuration
+        rails db:create
+        rails db:migrate
+        rails db:seed
 
-* Database creation
+    Run the rails server with 'rails s'
 
-* Database initialization
+    Navigate to the frontend folder and open the index.html file in your browser.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To use the application, simply use the marked buttons that appear on screen once the page has loaded and have fun!
